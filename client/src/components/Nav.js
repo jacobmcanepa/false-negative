@@ -1,28 +1,38 @@
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function toggleMenu() {
+    setMenuOpen(!menuOpen);
+  }
+
+  function handleLinkClick() {
+    setMenuOpen(false);
+  }
+
   return (
-    <>
-    <section className='nav-section'>
-      <Link to='/'>
-        <div className='hamburger'>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </Link>
+    <header>
+      <label for='trigger'>
+      <input type="checkbox" className='trigger' 
+        id='trigger' checked={menuOpen} onChange={toggleMenu}
+      />
       <nav>
-        <div>
-          <ul>
-            <li><NavLink to='/shop'>Shop</NavLink></li>
-            <li><NavLink to='/news'>News</NavLink></li>
-            <li><NavLink to='/about'>About</NavLink></li>
-            <li><NavLink to='/contact'>Contact</NavLink></li>
-          </ul>
-        </div>
+        <ul>
+          <li><NavLink to='/shop' onClick={handleLinkClick}>Shop</NavLink></li>
+          <li><NavLink to='/news' onClick={handleLinkClick}>News</NavLink></li>
+          <li><NavLink to='/about' onClick={handleLinkClick}>About</NavLink></li>
+          <li><NavLink to='/contact' onClick={handleLinkClick}>Contact</NavLink></li>
+        </ul>
       </nav>
-    </section>
-    </>
+      <div className='hamburger'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </label>
+    </header>
   );
 };
 
