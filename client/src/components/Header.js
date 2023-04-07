@@ -1,7 +1,7 @@
 function Header() {
     return (
         <>
-        <h1>False Negative</h1>
+        <h1 className="header">False Negative</h1>
         </>
     );
 };
