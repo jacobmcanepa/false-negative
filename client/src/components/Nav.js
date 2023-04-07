@@ -16,21 +16,18 @@ function Nav() {
         <span></span>
       </button>
       <nav className={`navigation ${showNavigation ? "visible" : ""}`}>
-        {/* <div className="navigation-close" onClick={toggleNavigation}>
-          <i className="fa fa-times" aria-hidden="true"></i>
-        </div> */}
         <ul>
           <li>
-            <NavLink to='/shop' className='link'>Shop</NavLink>
+            <NavLink to='/shop' className='link' onClick={toggleNavigation}>Shop</NavLink>
           </li>
           <li>
-            <NavLink to='/news' className='link'>News</NavLink>
+            <NavLink to='/news' className='link' onClick={toggleNavigation}>News</NavLink>
           </li>
           <li>
-            <NavLink to='/about' className='link'>About</NavLink>
+            <NavLink to='/about' className='link' onClick={toggleNavigation}>About</NavLink>
           </li>
           <li>
-            <NavLink to='/contact' className='link'>Contact</NavLink>
+            <NavLink to='/contact' className='link' onClick={toggleNavigation}>Contact</NavLink>
           </li>
         </ul>
       </nav>

@@ -38,6 +38,7 @@ code {
   border: none;
   color: #fff;
   z-index: 9999;
+  cursor: pointer;
 }
 
 .navigation-toggle span {
@@ -51,17 +52,6 @@ code {
   transition: transform 0.3s ease-in-out,
   top 0.3s ease-in-out,
   opacity 0.3s ease-in-out;
-}
-
-.navigation-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  background-color: transparent;
-  border: none;
-  color: #000;
-  cursor: pointer;
 }
 
 ul {
@@ -83,38 +73,7 @@ li {
 
 @media (min-width: 768px) {
   .navigation {
-    position: absolute;
-    left: 0;
-    width: 250px;
-    height: auto;
-    transform: none;
-    box-shadow: none;
-    transition: none;
-  }
-
-  .visible {
-    display: block;
-    left: 0;
-  }
-
-  /* .navigation-toggle {
-    display: none;
-  } */
-
-  ul {
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-  }
-
-  li {
-    margin-bottom: 0;
-  }
-
-  .link {
-    font-size: 24px;
+    width: 20%;
   }
 }
 

@@ -12,18 +12,16 @@ function App() {
   return (
     <>
     <Router>
-      <div>
-        <Nav />
-        <Header />
-        <Routes>
-          <Route exact path='/' element={ <Home /> } />
-          <Route exact path='/shop' element={ <Shop /> } />
-          <Route exact path='/news' element={ <News /> } />
-          <Route exact path='/about' element={ <About /> } />
-          <Route exact path='/contact' element={ <Contact /> } />
-          <Route exact path='*' element={ <PageNotFound /> } />
-        </Routes>
-      </div>
+      <Nav />
+      <Header />
+      <Routes>
+        <Route exact path='/' element={ <Home /> } />
+        <Route exact path='/shop' element={ <Shop /> } />
+        <Route exact path='/news' element={ <News /> } />
+        <Route exact path='/about' element={ <About /> } />
+        <Route exact path='/contact' element={ <Contact /> } />
+        <Route exact path='*' element={ <PageNotFound /> } />
+      </Routes>
     </Router>
     </>
   );
