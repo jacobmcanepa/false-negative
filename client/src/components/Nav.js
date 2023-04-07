@@ -1,39 +1,41 @@
-import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [showNavigation, setShowNavigation] = useState(false);
 
-  function toggleMenu() {
-    setMenuOpen(!menuOpen);
-  }
-
-  function handleLinkClick() {
-    setMenuOpen(false);
+  function toggleNavigation() {
+    setShowNavigation((prev) => !prev);
   }
 
   return (
-    <header>
-      <label for='trigger'>
-      <input type="checkbox" className='trigger' 
-        id='trigger' checked={menuOpen} onChange={toggleMenu}
-      />
-      <nav>
+    <>
+      <button className="navigation-toggle" onClick={toggleNavigation}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav className={`navigation ${showNavigation ? "visible" : ""}`}>
+        {/* <div className="navigation-close" onClick={toggleNavigation}>
+          <i className="fa fa-times" aria-hidden="true"></i>
+        </div> */}
         <ul>
-          <li><NavLink to='/shop' onClick={handleLinkClick}>Shop</NavLink></li>
-          <li><NavLink to='/news' onClick={handleLinkClick}>News</NavLink></li>
-          <li><NavLink to='/about' onClick={handleLinkClick}>About</NavLink></li>
-          <li><NavLink to='/contact' onClick={handleLinkClick}>Contact</NavLink></li>
+          <li>
+            <NavLink to='/shop' className='link'>Shop</NavLink>
+          </li>
+          <li>
+            <NavLink to='/news' className='link'>News</NavLink>
+          </li>
+          <li>
+            <NavLink to='/about' className='link'>About</NavLink>
+          </li>
+          <li>
+            <NavLink to='/contact' className='link'>Contact</NavLink>
+          </li>
         </ul>
       </nav>
-      <div className='hamburger'>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      </label>
-    </header>
+    </>
   );
-};
+}
 
 export default Nav;
