@@ -1,7 +1,7 @@
 function Shop() {
   return (
     <>
-    <h1>This is the Shop</h1>
+    <h1 className="flex-center">This is the Shop</h1>
     </>
   );
 };

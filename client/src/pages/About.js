@@ -1,7 +1,7 @@
 function About() {
   return (
     <>
-    <h1>This is the About page</h1>
+    <h1 className="flex-center">This is the About page</h1>
     </>
   );
 };

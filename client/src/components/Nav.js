@@ -11,23 +11,29 @@ function Nav() {
   return (
     <>
       <button className="navigation-toggle" onClick={toggleNavigation}>
-        <span></span>
-        <span></span>
-        <span></span>
+        <img src={require('.//images/FN.png')} alt="FN" className="nav-img"/>
       </button>
       <nav className={`navigation ${showNavigation ? "visible" : ""}`}>
         <ul>
           <li>
-            <NavLink to='/shop' className='link' onClick={toggleNavigation}>Shop</NavLink>
+            <NavLink to='/shop' className='link' onClick={toggleNavigation}>
+              <img src={require('.//images/SHOP.png')} alt="shop" />
+            </NavLink>
           </li>
           <li>
-            <NavLink to='/news' className='link' onClick={toggleNavigation}>News</NavLink>
+            <NavLink to='/news' className='link' onClick={toggleNavigation}>
+              <img src={require('.//images/NEWS.png')} alt="news" />
+            </NavLink>
           </li>
           <li>
-            <NavLink to='/about' className='link' onClick={toggleNavigation}>About</NavLink>
+            <NavLink to='/about' className='link' onClick={toggleNavigation}>
+              <img src={require('.//images/ABOUT.png')} alt="about" />
+            </NavLink>
           </li>
           <li>
-            <NavLink to='/contact' className='link' onClick={toggleNavigation}>Contact</NavLink>
+            <NavLink to='/contact' className='link' onClick={toggleNavigation}>
+              <img src={require('.//images/CONTACT.png')} alt="contact" />
+            </NavLink>
           </li>
         </ul>
       </nav>
