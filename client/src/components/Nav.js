@@ -17,22 +17,22 @@ function Nav() {
         <ul>
           <li>
             <NavLink to='/shop' className='link' onClick={toggleNavigation}>
-              <img src={require('.//images/SHOP.png')} alt="shop" />
+              <img src={require('.//images/SHOP.png')} alt="shop" className="li-img" />
             </NavLink>
           </li>
           <li>
             <NavLink to='/news' className='link' onClick={toggleNavigation}>
-              <img src={require('.//images/NEWS.png')} alt="news" />
+              <img src={require('.//images/NEWS.png')} alt="news" className="li-img" />
             </NavLink>
           </li>
           <li>
             <NavLink to='/about' className='link' onClick={toggleNavigation}>
-              <img src={require('.//images/ABOUT.png')} alt="about" />
+              <img src={require('.//images/ABOUT.png')} alt="about" className="li-img" />
             </NavLink>
           </li>
           <li>
             <NavLink to='/contact' className='link' onClick={toggleNavigation}>
-              <img src={require('.//images/CONTACT.png')} alt="contact" />
+              <img src={require('.//images/CONTACT.png')} alt="contact" className="li-img" />
             </NavLink>
           </li>
         </ul>
