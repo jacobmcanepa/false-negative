@@ -11,7 +11,7 @@ function Nav() {
   return (
     <>
       <button className="navigation-toggle" onClick={toggleNavigation}>
-        <img src={require('.//images/FN.png')} alt="FN" className="nav-img"/>
+        <img src={require('.//images/FN.png')} alt="MENU" className="nav-img"/>
       </button>
       <nav className={`navigation ${showNavigation ? "visible" : ""}`}>
         <ul>

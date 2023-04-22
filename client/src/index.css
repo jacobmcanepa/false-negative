@@ -54,7 +54,7 @@ code {
 }
 
 .nav-img {
-  width: 100px;
+  width: 80px;
 }
 
 .navigation-toggle span {
@@ -68,7 +68,7 @@ code {
 }
 
 ul {
-  margin-top: 170px;
+  margin-top: 120px;
   list-style-type: none;
   padding: 0;
   text-align: center;
@@ -91,6 +91,10 @@ li {
 }
 
 /* HEADER */
+/* .header {
+  padding-left: 80px;
+} */
+
 .header-link {
   text-decoration: none;
 }
@@ -99,7 +103,7 @@ li {
   width: 400px;
 }
 
-@media (max-width: 821px) {
+@media (max-width: 1032px) {
   .header {
     visibility: hidden;
   }
