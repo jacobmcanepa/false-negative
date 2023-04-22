@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jacobmcanepa.github.io/false-negative",
+  "homepage": "http://jacobmcanepa.github.io/home",
   "dependencies": {
     "@apollo/client": "^3.7.9",
     "@stripe/stripe-js": "^1.47.0",
