@@ -54,6 +54,11 @@ code {
 
 .nav-img {
   width: 80px;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-img:hover {
+  width: 85px;
 }
 
 .navigation-toggle span {
@@ -84,6 +89,11 @@ li {
 
 .li-img {
   width: 200px;
+  transition: width 0.3s ease-in-out;
+}
+
+.li-img:hover {
+  width: 230px;
 }
 
 @media (min-width: 821px) {
